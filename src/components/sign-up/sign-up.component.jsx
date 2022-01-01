@@ -13,7 +13,7 @@ class signUp extends React.Component {
             password: '',
             confirmPassword: ''
         };
-    }
+    };
     handleSubmit = async event => {
         event.preventDefault();
         const {displayName, email, password, confirmPassword} = this.state;
@@ -44,8 +44,8 @@ class signUp extends React.Component {
     };
 
     render(){
-        const {displayName, email, password, confirmPassword} = this.state
-;        return(
+        const {displayName, email, password, confirmPassword} = this.state;
+        return(
             <div className='sign-up'>
                 <h2 className='title'>I do not have an account</h2>
                 <span>Sign up with your email and password</span>
